@@ -39,7 +39,7 @@ pipeline{
                  type: 'war']], 
                  credentialsId: '8afd332d-c6ab-4e70-a551-b6c5305ea817', 
                  groupId: 'com.ossydevopsLab', 
-                 nexusUrl: '172.20.10.200:8081', 
+                 nexusUrl: '172.20.10.83:8081', 
                  nexusVersion: 'nexus3', 
                  protocol: 'http', 
                  repository: 'OssyDevOpsLab-SNAPSHOT', 
