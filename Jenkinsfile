@@ -42,7 +42,7 @@ pipeline{
               nexusArtifactUploader artifacts:
                [[artifactId: "${ArtifactId}", 
                classifier: '', 
-               file: 'target/OssyDevOpsLab-0.0.4-SNAPSHOT.war', 
+               file: "target/${ArtifactId}-${Version}.war", 
                type: 'war']], 
                credentialsId: '3bc95edd-f40a-4cd4-bd41-c1e83da38b62',
                 groupId: "${GroupId}", 
