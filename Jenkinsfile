@@ -9,6 +9,7 @@ pipeline{
         ArtifactId = readMavenPom().getArtifactId()
         Version = readMavenPom().getVersion()
         Name = readMavenPom().getName()
+        GroupId = readMavenPom?().getGroupId
     }
    
     stages {
@@ -51,7 +52,7 @@ pipeline{
             steps {
                 echo "Artifact ID is '${ArtifactId}'"
                 echo "Version is '${Version}'"
-                echo "GroupID is '{}'"
+                echo "GroupID is '${com.ossydevopsLab}'"
                 echo "Name is '${Name}'"
             }
         }
