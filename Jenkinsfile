@@ -32,14 +32,14 @@ pipeline{
         //Stage 3 : Publish the artifacts to Nexus
         stage ('Publish to Nexus'){
             steps {
-                nexusArtifactUploader artifacts: 
-                [[artifactId: 'OssyDevOpsLab',
-                 classifier: '', 
-                 file: 'target/OssyDevOpsLab-0.0.4-SNAPSHOT.war', 
-                 type: 'war']], 
-                 credentialsId: '8afd332d-c6ab-4e70-a551-b6c5305ea817', 
-                 groupId: 'com.ossydevopsLab', 
-                 nexusUrl: '172.20.10.83:8081', 
+              nexusArtifactUploader artifacts:
+               [[artifactId: 'OssyDevOpsLab', 
+               classifier: '', 
+               file: 'target/OssyDevOpsLab-0.0.4-SNAPSHOT.war', 
+               type: 'war']], 
+               credentialsId: '3bc95edd-f40a-4cd4-bd41-c1e83da38b62',
+                groupId: 'com.ossydevopsLab', 
+                nexusUrl: '172.20.10.121:8081',
                  nexusVersion: 'nexus3', 
                  protocol: 'http', 
                  repository: 'OssyDevOpsLab-SNAPSHOT', 
