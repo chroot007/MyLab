@@ -4,7 +4,7 @@
   <groupId>com.ossydevopsLab</groupId>
   <artifactId>OssyDevOpsLab</artifactId>
   <packaging>war</packaging>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <name>OssyDevOpsLab</name>
   <url>http://maven.apache.org</url>
   <dependencies>
