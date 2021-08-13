@@ -63,7 +63,7 @@ pipeline{
                 [sshPublisherDesc(configName: 'Ansible_Controller',
                  transfers: 
                  [sshTransfer(cleanRemote: false, 
-                 execCommand: 'ansible-playbook /opt/playbooks/downloadDeploy.yaml -i /opt/playbooks/hosts', 
+                 execCommand: 'ansible-playbook downloadDeploy_as_tomcat_user.yaml -i /opt/playbooks/hosts', 
                  execTimeout: 120000, 
                  )],
                      usePromotionTimestamp: false,
