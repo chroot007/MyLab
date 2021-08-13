@@ -75,7 +75,7 @@ pipeline{
         }
 
          // Stage 5 : Deploying the build artifact to docker
-         stage ('Deploy'){
+         stage ('Deploy to Tomcat'){
             steps {
                 echo ' deploying......'
                 sshPublisher(publishers: 
